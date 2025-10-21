@@ -51,23 +51,13 @@ public class registrarAuto extends javax.swing.JFrame {
         jLabel1.setBackground(new java.awt.Color(255, 51, 0));
         jLabel1.setText("Marca");
 
-        jTextField1.setText("jTextField1");
-
         jLabel2.setText("Modelo");
-
-        jTextField2.setText("jTextField2");
 
         jLabel3.setText("Color");
 
-        jTextField3.setText("jTextField3");
-
         jLabel4.setText("Número de pasajeros");
 
-        jTextField4.setText("jTextField4");
-
         jLabel5.setText("Precio por día");
-
-        jTextField5.setText("jTextField5");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -118,6 +108,11 @@ public class registrarAuto extends javax.swing.JFrame {
         );
 
         jButton1.setText("Regresar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jLabel6.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
         jLabel6.setText("Registra un coche");
@@ -175,6 +170,11 @@ public class registrarAuto extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        dispose();
+        new Menu().setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments

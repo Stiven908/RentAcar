@@ -5,6 +5,7 @@
 package rentacar;
 
  import servicio.Conexion;
+import vista.Menu;
 public class RentAcar {
 
     /**
@@ -12,7 +13,7 @@ public class RentAcar {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Conexion.conectarBd();
+        new Menu().setVisible(true);
     }
     //Comentario para ver que pedo  sas//
 }
