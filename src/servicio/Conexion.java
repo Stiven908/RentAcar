@@ -20,7 +20,7 @@ public class Conexion {
              url = String.format("jdbc:mysql://%s:%d/%s", host,port,database);
             System.out.println("URL: " + url);
             con = DriverManager.getConnection(url,user,password);
-            System.out.println("conexion ala BD es ok");
+            System.out.println("conexion a la BD es ok");
         }
         catch(SQLException ex){
              System.out.println("Error SQL" + ex);
